@@ -1,9 +1,10 @@
-weight = input()
-if weight.endswith('kg'):
-  kg = float(weight[:-2])
+# TempConvert.py
+TempStr = input("请输入带有符号的重量值:")
+if TempStr[-1] in ['KG','kg']:
   pd = kg*2.2046
-  print(f"{判断：。3f}磅）
-elif weight.endswith('pd'):
-  pd = float(weight[:-2])
+  print("转换后的重量是{:.2f}pd".format(PD))
+elif TempStr[-1] in ['PD'],['pd']:
   kg = pd/2.2046
-  print(f"{kg:.3f}公斤")
+  print("转换后的重量是{:.2f}kg".format(KG))
+else:
+  print("输入格式错误")
